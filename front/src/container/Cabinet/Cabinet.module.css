@@ -1,0 +1,7 @@
+.mainCabinet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  padding: 40px 0;
+}

@@ -1,0 +1,115 @@
+.mainHome {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.imageBlock {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100dvh;
+  background: url("../../assets/bgc.jpg") center/cover no-repeat;
+}
+
+.imageBlock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  pointer-events: none;
+}
+
+.mainHomeFunknBlock {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.mainHomeTitle {
+  text-align: center;
+  color: var(--white);
+}
+
+.mainHome .imageBlock span {
+  color: #eb5247;
+}
+
+.mainHome .imageBlock span:first-child {
+  color: #ebe047;
+}
+
+.mainHome .imageBlock span:nth-child(2) {
+  color: #7beb47;
+}
+
+.mainHome .imageBlock span:nth-child(3) {
+  color: #2453d3;
+}
+
+.mainLessons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.mainLessons p:nth-child(2) {
+  font-size: 20px;
+}
+
+.mainHome .lessonsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.mainHome .lessonsList li {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+
+.mainHome .lessonsList li .lessonsListImages {
+  max-width: 100%;
+}
+
+@media (width <= 790px) {
+  .mainHomeTitle {
+    bottom: 130px;
+  }
+  .mainHomeButton {
+    bottom: 50px;
+  }
+}
+
+@media (width <= 475px) {
+  .mainHomeTitle {
+    font-size: 20px;
+    bottom: 130px;
+  }
+  .mainHomeButton {
+    bottom: 50px;
+  }
+}
+
+@media (width <= 895px) {
+  .mainHome .lessonsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width >= 940px) {
+  .mainHomeTitle {
+    font-size: 26px;
+  }
+}

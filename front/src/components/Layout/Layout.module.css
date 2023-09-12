@@ -1,0 +1,37 @@
+.mainLayout {
+  max-width: 1400px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.mainLayout ul {
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.mainNavLink {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: right;
+  color: var(--white);
+}
+
+.mainNavLink:visited {
+  color: var(--white);
+}
+
+header {
+  padding: 45px 0;
+  background: var(--black);
+}
+
+footer {
+  color: var(--black);
+  text-align: center;
+}
